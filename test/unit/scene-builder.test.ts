@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { LayoutModel } from '../../src/model/layout-model.js';
 import { buildScene } from '../../src/scene/scene-builder.js';
+import { lightTheme } from '../../src/scene/visual-theme.js';
 
 describe('SceneBuilder', () => {
   it('converts grouped layout stages into renderer-neutral primitives', () => {
@@ -54,52 +55,65 @@ describe('SceneBuilder', () => {
 
     const scene = buildScene(layout);
 
+    expect(scene.backgroundColor).toBe(lightTheme.canvas.fill);
     expect(scene.primitives[0]).toEqual({
       kind: 'arrow',
       startX: 200,
       startY: 190,
       endX: 200,
       endY: 254,
+      ...lightTheme.arrow,
     });
     expect(scene.primitives).toContainEqual({
       kind: 'text',
+      role: 'section-title',
       x: 200,
       y: 30,
       value: 'Architecture',
-      fontSize: 28,
-      fontWeight: 'bold',
+      ...lightTheme.text['section-title'],
     });
     expect(scene.primitives).toContainEqual({
       kind: 'rectangle',
+      role: 'container',
       x: 20,
       y: 70,
       width: 360,
       height: 120,
-      cornerRadius: 16,
+      ...lightTheme.rectangles.container,
     });
     expect(scene.primitives).toContainEqual({
       kind: 'text',
+      role: 'container-title',
       x: 200,
       y: 94,
       value: 'Inputs',
-      fontSize: 18,
-      fontWeight: 'bold',
+      ...lightTheme.text['container-title'],
     });
     expect(scene.primitives).toContainEqual({
       kind: 'rectangle',
+      role: 'secondary-node',
       x: 40,
       y: 118,
       width: 136,
       height: 52,
-      cornerRadius: 12,
+      ...lightTheme.rectangles['secondary-node'],
     });
     expect(scene.primitives).toContainEqual({
       kind: 'text',
+      role: 'primary-label',
       x: 200,
       y: 286,
       value: 'Runtime',
-      fontSize: 16,
-      fontWeight: 'bold',
+      ...lightTheme.text['primary-label'],
+    });
+    expect(scene.primitives).toContainEqual({
+      kind: 'rectangle',
+      role: 'primary-node',
+      x: 60,
+      y: 254,
+      width: 280,
+      height: 64,
+      ...lightTheme.rectangles['primary-node'],
     });
   });
 

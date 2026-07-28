@@ -16,7 +16,7 @@ describe('rendering pipeline', () => {
     expect(svg).toContain('>LLM</text>');
     expect(svg).toContain('Tools');
     expect(svg).toContain('Web Search');
-    expect(svg.match(/<rect /gu)).toHaveLength(20);
+    expect(svg.match(/<rect /gu)).toHaveLength(21);
     expect(svg.match(/<line /gu)).toHaveLength(6);
   });
 });
