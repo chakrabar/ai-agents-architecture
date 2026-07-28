@@ -29,6 +29,14 @@ pnpm check
 pnpm build
 ```
 
+Generate the hardcoded example diagram:
+
+```sh
+pnpm generate
+```
+
+The command writes the SVG to `output/hello.svg`.
+
 ## License
 
 [MIT](LICENSE)

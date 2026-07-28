@@ -3,5 +3,5 @@
  * output representation.
  */
 export interface Renderer<TSceneGraph, TOutput> {
-  render(sceneGraph: TSceneGraph): TOutput;
+  readonly render: (sceneGraph: TSceneGraph) => TOutput;
 }

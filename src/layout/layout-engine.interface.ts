@@ -3,5 +3,5 @@
  * model into a layout model.
  */
 export interface LayoutEngine<TArchitectureModel, TLayoutModel> {
-  layout(architecture: TArchitectureModel): TLayoutModel;
+  readonly layout: (architecture: TArchitectureModel) => TLayoutModel;
 }

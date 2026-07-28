@@ -28,6 +28,7 @@
     "check": "prettier --check . && eslint \"src/**/*.ts\" \"test/**/*.ts\" --no-error-on-unmatched-pattern && tsc --project tsconfig.json && vitest run --passWithNoTests",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "generate": "tsc --project tsconfig.build.json && node dist/cli/main.js",
     "lint": "eslint \"src/**/*.ts\" \"test/**/*.ts\" --no-error-on-unmatched-pattern",
     "test": "vitest run --passWithNoTests",
     "typecheck": "tsc --project tsconfig.json"
