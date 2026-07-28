@@ -8,6 +8,8 @@ import type {
 import type { Renderer } from './renderer.interface.js';
 
 const ARROW_MARKER_ID = 'arrowhead';
+const FONT_FAMILY =
+  'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif';
 
 function escapeXml(value: string): string {
   return value
@@ -23,7 +25,7 @@ function renderRectangle(rectangle: Rectangle): string {
 }
 
 function renderText(text: Text): string {
-  return `<text x="${text.x}" y="${text.y}" text-anchor="middle" dominant-baseline="middle" fill="currentColor">${escapeXml(text.value)}</text>`;
+  return `<text x="${text.x}" y="${text.y}" text-anchor="middle" dominant-baseline="middle" font-size="${text.fontSize}" font-weight="${text.fontWeight}" fill="currentColor">${escapeXml(text.value)}</text>`;
 }
 
 function renderArrow(arrow: Arrow): string {
@@ -55,7 +57,7 @@ export function renderSvg(scene: Scene): string {
   const primitives = scene.primitives.map(renderPrimitive);
 
   return [
-    `<svg xmlns="http://www.w3.org/2000/svg" width="${scene.width}" height="${scene.height}" viewBox="0 0 ${scene.width} ${scene.height}">`,
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${scene.width}" height="${scene.height}" viewBox="0 0 ${scene.width} ${scene.height}" font-family="${FONT_FAMILY}">`,
     renderArrowMarker(),
     ...primitives.map((primitive) => `  ${primitive}`),
     '</svg>',

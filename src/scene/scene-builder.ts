@@ -1,4 +1,9 @@
-import type { LayoutModel, LayoutNode } from '../model/layout-model.js';
+import type {
+  LayoutGroup,
+  LayoutModel,
+  LayoutNode,
+  LayoutStage,
+} from '../model/layout-model.js';
 import type {
   Arrow,
   Rectangle,
@@ -7,22 +12,23 @@ import type {
   Text,
 } from '../model/scene-graph.js';
 
-const CORNER_RADIUS = 12;
+const PRIMARY_CORNER_RADIUS = 16;
+const SECONDARY_CORNER_RADIUS = 12;
 
-function findNode(
-  nodesById: ReadonlyMap<string, LayoutNode>,
-  nodeId: string,
-): LayoutNode {
-  const node = nodesById.get(nodeId);
+function findStage(
+  stagesById: ReadonlyMap<string, LayoutStage>,
+  stageId: string,
+): LayoutStage {
+  const stage = stagesById.get(stageId);
 
-  if (node === undefined) {
-    throw new Error(`Layout edge references unknown node "${nodeId}".`);
+  if (stage === undefined) {
+    throw new Error(`Layout edge references unknown stage "${stageId}".`);
   }
 
-  return node;
+  return stage;
 }
 
-function createArrow(source: LayoutNode, target: LayoutNode): Arrow {
+function createArrow(source: LayoutStage, target: LayoutStage): Arrow {
   return {
     kind: 'arrow',
     startX: source.x + source.width / 2,
@@ -32,7 +38,11 @@ function createArrow(source: LayoutNode, target: LayoutNode): Arrow {
   };
 }
 
-function createNodePrimitives(node: LayoutNode): readonly [Rectangle, Text] {
+function createNodePrimitives(
+  node: LayoutNode,
+  cornerRadius: number,
+  fontWeight: Text['fontWeight'],
+): readonly [Rectangle, Text] {
   return [
     {
       kind: 'rectangle',
@@ -40,31 +50,72 @@ function createNodePrimitives(node: LayoutNode): readonly [Rectangle, Text] {
       y: node.y,
       width: node.width,
       height: node.height,
-      cornerRadius: CORNER_RADIUS,
+      cornerRadius,
     },
     {
       kind: 'text',
       x: node.x + node.width / 2,
       y: node.y + node.height / 2,
       value: node.label,
+      fontSize: node.fontSize,
+      fontWeight,
     },
   ];
 }
 
+function createGroupPrimitives(group: LayoutGroup): readonly ScenePrimitive[] {
+  return [
+    {
+      kind: 'rectangle',
+      x: group.x,
+      y: group.y,
+      width: group.width,
+      height: group.height,
+      cornerRadius: PRIMARY_CORNER_RADIUS,
+    },
+    {
+      kind: 'text',
+      x: group.titleX,
+      y: group.titleY,
+      value: group.title,
+      fontSize: group.titleFontSize,
+      fontWeight: 'bold',
+    },
+    ...group.children.flatMap((child) =>
+      createNodePrimitives(child, SECONDARY_CORNER_RADIUS, 'normal'),
+    ),
+  ];
+}
+
+function createStagePrimitives(stage: LayoutStage): readonly ScenePrimitive[] {
+  return stage.kind === 'group'
+    ? createGroupPrimitives(stage)
+    : createNodePrimitives(stage, PRIMARY_CORNER_RADIUS, 'bold');
+}
+
 export function buildScene(layout: LayoutModel): Scene {
-  const nodesById = new Map(layout.nodes.map((node) => [node.id, node]));
+  const stagesById = new Map(layout.stages.map((stage) => [stage.id, stage]));
   const arrows = layout.edges.map((edge) =>
     createArrow(
-      findNode(nodesById, edge.sourceId),
-      findNode(nodesById, edge.targetId),
+      findStage(stagesById, edge.sourceId),
+      findStage(stagesById, edge.targetId),
     ),
   );
-  const nodePrimitives: readonly ScenePrimitive[] =
-    layout.nodes.flatMap(createNodePrimitives);
+  const sectionTitle: Text = {
+    kind: 'text',
+    x: layout.sectionTitle.x,
+    y: layout.sectionTitle.y,
+    value: layout.sectionTitle.text,
+    fontSize: layout.sectionTitle.fontSize,
+    fontWeight: 'bold',
+  };
+  const stagePrimitives: readonly ScenePrimitive[] = layout.stages.flatMap(
+    createStagePrimitives,
+  );
 
   return {
     width: layout.width,
     height: layout.height,
-    primitives: [...arrows, ...nodePrimitives],
+    primitives: [...arrows, sectionTitle, ...stagePrimitives],
   };
 }

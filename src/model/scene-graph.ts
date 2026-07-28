@@ -12,6 +12,8 @@ export interface Text {
   readonly x: number;
   readonly y: number;
   readonly value: string;
+  readonly fontSize: number;
+  readonly fontWeight: 'normal' | 'bold';
 }
 
 export interface Arrow {

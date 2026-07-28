@@ -4,6 +4,12 @@ export {
   createSimpleLayout,
 } from './layout/simple-layout-engine.js';
 export type { LayoutEngine } from './layout/layout-engine.interface.js';
+export {
+  defaultLayoutMetrics,
+  type LayoutMetrics,
+  type SpacingScale,
+  type TypographyScale,
+} from './layout/layout-metrics.js';
 export type {
   ArchitectureEdge,
   ArchitectureModel,
@@ -11,8 +17,11 @@ export type {
 } from './model/architecture-model.js';
 export type {
   LayoutEdge,
+  LayoutGroup,
   LayoutModel,
   LayoutNode,
+  LayoutSectionTitle,
+  LayoutStage,
 } from './model/layout-model.js';
 export type {
   Arrow,

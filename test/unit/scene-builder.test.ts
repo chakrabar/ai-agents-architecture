@@ -3,74 +3,122 @@ import type { LayoutModel } from '../../src/model/layout-model.js';
 import { buildScene } from '../../src/scene/scene-builder.js';
 
 describe('SceneBuilder', () => {
-  it('converts positioned nodes and edges into scene primitives', () => {
+  it('converts grouped layout stages into renderer-neutral primitives', () => {
     const layout: LayoutModel = {
-      width: 120,
-      height: 180,
-      nodes: [
+      width: 400,
+      height: 400,
+      sectionTitle: {
+        text: 'Architecture',
+        x: 200,
+        y: 30,
+        fontSize: 28,
+      },
+      stages: [
         {
-          id: 'source',
-          label: 'Source',
-          x: 10,
-          y: 10,
-          width: 100,
-          height: 40,
+          kind: 'group',
+          id: 'group:Inputs',
+          title: 'Inputs',
+          x: 20,
+          y: 70,
+          width: 360,
+          height: 120,
+          titleX: 200,
+          titleY: 94,
+          titleFontSize: 18,
+          children: [
+            {
+              kind: 'node',
+              id: 'input',
+              label: 'Input',
+              x: 40,
+              y: 118,
+              width: 136,
+              height: 52,
+              fontSize: 14,
+            },
+          ],
         },
         {
-          id: 'target',
-          label: 'Target',
-          x: 10,
-          y: 130,
-          width: 100,
-          height: 40,
+          kind: 'node',
+          id: 'runtime',
+          label: 'Runtime',
+          x: 60,
+          y: 254,
+          width: 280,
+          height: 64,
+          fontSize: 16,
         },
       ],
-      edges: [{ sourceId: 'source', targetId: 'target' }],
+      edges: [{ sourceId: 'group:Inputs', targetId: 'runtime' }],
     };
 
-    expect(buildScene(layout)).toEqual({
-      width: 120,
-      height: 180,
-      primitives: [
-        {
-          kind: 'arrow',
-          startX: 60,
-          startY: 50,
-          endX: 60,
-          endY: 130,
-        },
-        {
-          kind: 'rectangle',
-          x: 10,
-          y: 10,
-          width: 100,
-          height: 40,
-          cornerRadius: 12,
-        },
-        { kind: 'text', x: 60, y: 30, value: 'Source' },
-        {
-          kind: 'rectangle',
-          x: 10,
-          y: 130,
-          width: 100,
-          height: 40,
-          cornerRadius: 12,
-        },
-        { kind: 'text', x: 60, y: 150, value: 'Target' },
-      ],
+    const scene = buildScene(layout);
+
+    expect(scene.primitives[0]).toEqual({
+      kind: 'arrow',
+      startX: 200,
+      startY: 190,
+      endX: 200,
+      endY: 254,
+    });
+    expect(scene.primitives).toContainEqual({
+      kind: 'text',
+      x: 200,
+      y: 30,
+      value: 'Architecture',
+      fontSize: 28,
+      fontWeight: 'bold',
+    });
+    expect(scene.primitives).toContainEqual({
+      kind: 'rectangle',
+      x: 20,
+      y: 70,
+      width: 360,
+      height: 120,
+      cornerRadius: 16,
+    });
+    expect(scene.primitives).toContainEqual({
+      kind: 'text',
+      x: 200,
+      y: 94,
+      value: 'Inputs',
+      fontSize: 18,
+      fontWeight: 'bold',
+    });
+    expect(scene.primitives).toContainEqual({
+      kind: 'rectangle',
+      x: 40,
+      y: 118,
+      width: 136,
+      height: 52,
+      cornerRadius: 12,
+    });
+    expect(scene.primitives).toContainEqual({
+      kind: 'text',
+      x: 200,
+      y: 286,
+      value: 'Runtime',
+      fontSize: 16,
+      fontWeight: 'bold',
     });
   });
 
-  it('rejects edges that reference an unknown node', () => {
+  it('rejects edges that reference an unknown stage', () => {
     const layout: LayoutModel = {
       width: 100,
       height: 100,
-      nodes: [],
+      sectionTitle: {
+        text: 'Architecture',
+        x: 50,
+        y: 20,
+        fontSize: 28,
+      },
+      stages: [],
       edges: [{ sourceId: 'missing', targetId: 'also-missing' }],
     };
 
     expect(() => buildScene(layout)).toThrow(
-      'Layout edge references unknown node "missing".',
+      'Layout edge references unknown stage "missing".',
     );
   });
 });

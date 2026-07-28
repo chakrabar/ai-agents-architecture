@@ -1,27 +1,22 @@
 import { describe, expect, it } from 'vitest';
+import { helloArchitecture } from '../../src/cli/hello-architecture.js';
 import { generateSvg } from '../../src/generate-svg.js';
-import type { ArchitectureModel } from '../../src/model/architecture-model.js';
 
 describe('rendering pipeline', () => {
-  it('transforms an architecture model into an SVG string', () => {
-    const architecture: ArchitectureModel = {
-      nodes: [
-        { id: 'entry-points', label: 'Entry Points' },
-        { id: 'agent-runtime', label: 'Agent Runtime' },
-        { id: 'agent', label: 'Agent' },
-      ],
-      edges: [
-        { sourceId: 'entry-points', targetId: 'agent-runtime' },
-        { sourceId: 'agent-runtime', targetId: 'agent' },
-      ],
-    };
+  it('renders the AI coding workflow as a complete SVG string', () => {
+    const svg = generateSvg(helloArchitecture);
 
-    const svg = generateSvg(architecture);
-
+    expect(svg).toContain('AI Agents Architecture');
     expect(svg).toContain('Entry Points');
     expect(svg).toContain('Agent Runtime');
-    expect(svg).toContain('>Agent</text>');
-    expect(svg.match(/<rect /gu)).toHaveLength(3);
-    expect(svg.match(/<line /gu)).toHaveLength(2);
+    expect(svg).toContain('Context Assembly');
+    expect(svg).toContain('Prompt Construction');
+    expect(svg).toContain('Model Provider');
+    expect(svg).toContain('OpenRouter');
+    expect(svg).toContain('>LLM</text>');
+    expect(svg).toContain('Tools');
+    expect(svg).toContain('Web Search');
+    expect(svg.match(/<rect /gu)).toHaveLength(20);
+    expect(svg.match(/<line /gu)).toHaveLength(6);
   });
 });
