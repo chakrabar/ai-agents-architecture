@@ -1,0 +1,10 @@
+{
+  "decision": "accept",
+  "severity": "minor",
+  "failed_checks": [
+    "intermediate horizontal uncertainty at 045, 067.5, 112.5, 135, and 292.5",
+    "continuity metric warnings without visible defects"
+  ],
+  "evidence": "Labeled normal-size review confirms the intended quadrants, all four cardinal directions pass, the ordered loop never reverses, and no seam, silhouette break, registration snap, scale pop, or broken attachment is visible.",
+  "reviewed_by": "independent_visual_qa"
+}
