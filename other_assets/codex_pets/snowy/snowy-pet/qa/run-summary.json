@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "spriteVersionNumber": 2,
+  "run_dir": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet",
+  "spritesheet": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/final/spritesheet-extended.webp",
+  "validation": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/final/validation-extended.json",
+  "chroma_despill": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/qa/chroma-despill-extended.json",
+  "contact_sheet": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/qa/contact-sheet-extended.png",
+  "direction_sheet": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/qa/look-directions.png",
+  "direction_semantics": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/qa/direction-semantics.json",
+  "blind_direction_validation": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/qa/direction-blind-validation.json",
+  "continuity": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/qa/look-continuity.json",
+  "review": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/qa/review.json",
+  "package": "/Users/arghya.chakrabarty/.codex/pets/snowy"
+}

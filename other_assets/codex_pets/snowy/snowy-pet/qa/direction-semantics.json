@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "reviewed_by": "independent-final-visual-qa",
+  "directions": [
+    {"direction":"000","verdict":"pass","expected":"up","observed":"up","reason":"clear upward head pitch with nose aimed above the centered head"},
+    {"direction":"022.5","verdict":"pass","expected":"up-right","observed":"up-right","reason":"raised nose and gaze begin moving screen-right"},
+    {"direction":"045","verdict":"pass","expected":"up-right","observed":"up-right","reason":"head turn and muzzle show both upward and screen-right axes"},
+    {"direction":"067.5","verdict":"pass","expected":"up-right","observed":"up-right","reason":"screen-right profile retains a visible upward pitch"},
+    {"direction":"090","verdict":"pass","expected":"right","observed":"right","reason":"nose and muzzle form a clear screen-right profile"},
+    {"direction":"112.5","verdict":"pass","expected":"down-right","observed":"down-right","reason":"right-facing muzzle begins a readable downward pitch"},
+    {"direction":"135","verdict":"pass","expected":"down-right","observed":"down-right","reason":"head and gaze clearly combine down and screen-right"},
+    {"direction":"157.5","verdict":"pass","expected":"down-right","observed":"down-right","reason":"strong down-right pitch lands one step before down"},
+    {"direction":"180","verdict":"pass","expected":"down","observed":"down","reason":"head is unmistakably bowed with nose below the eyes toward the paws"},
+    {"direction":"202.5","verdict":"pass","expected":"down-left","observed":"down-left","reason":"lowered nose and gaze begin moving screen-left"},
+    {"direction":"225","verdict":"pass","expected":"down-left","observed":"down-left","reason":"head turn clearly combines down and screen-left"},
+    {"direction":"247.5","verdict":"pass","expected":"down-left","observed":"down-left","reason":"screen-left profile retains a visible downward pitch"},
+    {"direction":"270","verdict":"pass","expected":"left","observed":"left","reason":"nose and muzzle form a clear screen-left profile"},
+    {"direction":"292.5","verdict":"pass","expected":"up-left","observed":"up-left","reason":"left-facing nose and gaze begin lifting"},
+    {"direction":"315","verdict":"pass","expected":"up-left","observed":"up-left","reason":"head and muzzle clearly combine up and screen-left"},
+    {"direction":"337.5","verdict":"pass","expected":"up-left","observed":"up-left","reason":"strong up-left gaze lands one step before straight up"}
+  ],
+  "review_warnings": []
+}

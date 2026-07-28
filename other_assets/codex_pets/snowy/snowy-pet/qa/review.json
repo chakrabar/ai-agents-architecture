@@ -1,0 +1,977 @@
+{
+  "ok": true,
+  "frames_root": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames",
+  "states": [
+    "idle",
+    "running-right",
+    "running-left",
+    "waving",
+    "jumping",
+    "failed",
+    "waiting",
+    "running",
+    "review"
+  ],
+  "errors": [],
+  "warnings": [
+    "running-left used extraction method stable-slots; confirm motion playback remains stable and unclipped"
+  ],
+  "rows": [
+    {
+      "state": "idle",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/idle/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16212,
+          "bbox": [
+            31,
+            5,
+            160,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 175
+        },
+        {
+          "index": 1,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/idle/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16100,
+          "bbox": [
+            32,
+            5,
+            159,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 163
+        },
+        {
+          "index": 2,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/idle/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15334,
+          "bbox": [
+            39,
+            5,
+            153,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 139
+        },
+        {
+          "index": 3,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/idle/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16095,
+          "bbox": [
+            33,
+            5,
+            158,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 164
+        },
+        {
+          "index": 4,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/idle/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16204,
+          "bbox": [
+            34,
+            5,
+            158,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 152
+        },
+        {
+          "index": 5,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/idle/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16190,
+          "bbox": [
+            31,
+            5,
+            160,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 159
+        }
+      ]
+    },
+    {
+      "state": "running-right",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running-right/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15164,
+          "bbox": [
+            5,
+            23,
+            187,
+            184
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 280
+        },
+        {
+          "index": 1,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running-right/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 13854,
+          "bbox": [
+            5,
+            20,
+            187,
+            188
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 184
+        },
+        {
+          "index": 2,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running-right/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16285,
+          "bbox": [
+            5,
+            8,
+            187,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 310
+        },
+        {
+          "index": 3,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running-right/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16224,
+          "bbox": [
+            5,
+            21,
+            187,
+            186
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 277
+        },
+        {
+          "index": 4,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running-right/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18509,
+          "bbox": [
+            5,
+            9,
+            187,
+            199
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 312
+        },
+        {
+          "index": 5,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running-right/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 14939,
+          "bbox": [
+            5,
+            21,
+            187,
+            186
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 258
+        },
+        {
+          "index": 6,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running-right/06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15913,
+          "bbox": [
+            5,
+            12,
+            187,
+            196
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 267
+        },
+        {
+          "index": 7,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running-right/07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 14899,
+          "bbox": [
+            5,
+            21,
+            187,
+            186
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 289
+        }
+      ]
+    },
+    {
+      "state": "running-left",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": "stable-slots",
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "running-left used extraction method stable-slots; confirm motion playback remains stable and unclipped"
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running-left/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11408,
+          "bbox": [
+            20,
+            29,
+            172,
+            179
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 242
+        },
+        {
+          "index": 1,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running-left/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10592,
+          "bbox": [
+            19,
+            32,
+            173,
+            168
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 219
+        },
+        {
+          "index": 2,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running-left/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10307,
+          "bbox": [
+            5,
+            40,
+            187,
+            163
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 189
+        },
+        {
+          "index": 3,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running-left/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 9919,
+          "bbox": [
+            26,
+            46,
+            165,
+            178
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 178
+        },
+        {
+          "index": 4,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running-left/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 11128,
+          "bbox": [
+            21,
+            30,
+            171,
+            179
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 234
+        },
+        {
+          "index": 5,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running-left/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 10015,
+          "bbox": [
+            26,
+            33,
+            165,
+            168
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 192
+        },
+        {
+          "index": 6,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running-left/06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 9931,
+          "bbox": [
+            7,
+            43,
+            184,
+            163
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 186
+        },
+        {
+          "index": 7,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running-left/07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 9320,
+          "bbox": [
+            30,
+            50,
+            161,
+            178
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 177
+        }
+      ]
+    },
+    {
+      "state": "waving",
+      "expected_frames": 4,
+      "actual_frames": 4,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/waving/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16255,
+          "bbox": [
+            28,
+            5,
+            163,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 99
+        },
+        {
+          "index": 1,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/waving/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15647,
+          "bbox": [
+            26,
+            5,
+            165,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 105
+        },
+        {
+          "index": 2,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/waving/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16660,
+          "bbox": [
+            26,
+            5,
+            166,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 120
+        },
+        {
+          "index": 3,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/waving/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16279,
+          "bbox": [
+            24,
+            5,
+            167,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 103
+        }
+      ]
+    },
+    {
+      "state": "jumping",
+      "expected_frames": 5,
+      "actual_frames": 5,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/jumping/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 22587,
+          "bbox": [
+            5,
+            9,
+            187,
+            198
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 295
+        },
+        {
+          "index": 1,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/jumping/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16705,
+          "bbox": [
+            5,
+            5,
+            186,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 168
+        },
+        {
+          "index": 2,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/jumping/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 13515,
+          "bbox": [
+            5,
+            32,
+            187,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 131
+        },
+        {
+          "index": 3,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/jumping/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 21013,
+          "bbox": [
+            6,
+            5,
+            185,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 222
+        },
+        {
+          "index": 4,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/jumping/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17593,
+          "bbox": [
+            18,
+            5,
+            174,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 215
+        }
+      ]
+    },
+    {
+      "state": "failed",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/failed/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15998,
+          "bbox": [
+            32,
+            5,
+            160,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 267
+        },
+        {
+          "index": 1,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/failed/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 21063,
+          "bbox": [
+            16,
+            5,
+            175,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 396
+        },
+        {
+          "index": 2,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/failed/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 25173,
+          "bbox": [
+            5,
+            9,
+            187,
+            199
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 496
+        },
+        {
+          "index": 3,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/failed/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 22776,
+          "bbox": [
+            5,
+            15,
+            187,
+            193
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 331
+        },
+        {
+          "index": 4,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/failed/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 22257,
+          "bbox": [
+            5,
+            17,
+            187,
+            190
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 317
+        },
+        {
+          "index": 5,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/failed/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 22307,
+          "bbox": [
+            5,
+            15,
+            187,
+            193
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 293
+        },
+        {
+          "index": 6,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/failed/06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19487,
+          "bbox": [
+            21,
+            5,
+            171,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 380
+        },
+        {
+          "index": 7,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/failed/07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16644,
+          "bbox": [
+            30,
+            5,
+            161,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 281
+        }
+      ]
+    },
+    {
+      "state": "waiting",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/waiting/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16518,
+          "bbox": [
+            28,
+            5,
+            164,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 167
+        },
+        {
+          "index": 1,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/waiting/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17046,
+          "bbox": [
+            23,
+            5,
+            168,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 198
+        },
+        {
+          "index": 2,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/waiting/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16016,
+          "bbox": [
+            24,
+            5,
+            168,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 178
+        },
+        {
+          "index": 3,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/waiting/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15002,
+          "bbox": [
+            30,
+            5,
+            161,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 175
+        },
+        {
+          "index": 4,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/waiting/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16621,
+          "bbox": [
+            29,
+            5,
+            162,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 195
+        },
+        {
+          "index": 5,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/waiting/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16501,
+          "bbox": [
+            27,
+            5,
+            164,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 188
+        }
+      ]
+    },
+    {
+      "state": "running",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16000,
+          "bbox": [
+            30,
+            5,
+            162,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 146
+        },
+        {
+          "index": 1,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16011,
+          "bbox": [
+            31,
+            5,
+            160,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 136
+        },
+        {
+          "index": 2,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20355,
+          "bbox": [
+            15,
+            5,
+            177,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 286
+        },
+        {
+          "index": 3,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17782,
+          "bbox": [
+            24,
+            5,
+            168,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 178
+        },
+        {
+          "index": 4,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18720,
+          "bbox": [
+            21,
+            5,
+            171,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 223
+        },
+        {
+          "index": 5,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/running/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15807,
+          "bbox": [
+            31,
+            5,
+            161,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 154
+        }
+      ]
+    },
+    {
+      "state": "review",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/review/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16256,
+          "bbox": [
+            29,
+            5,
+            162,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 176
+        },
+        {
+          "index": 1,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/review/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16871,
+          "bbox": [
+            23,
+            5,
+            168,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 173
+        },
+        {
+          "index": 2,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/review/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15816,
+          "bbox": [
+            33,
+            5,
+            158,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 161
+        },
+        {
+          "index": 3,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/review/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15785,
+          "bbox": [
+            32,
+            5,
+            159,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 157
+        },
+        {
+          "index": 4,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/review/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15689,
+          "bbox": [
+            31,
+            5,
+            160,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 147
+        },
+        {
+          "index": 5,
+          "file": "/Users/arghya.chakrabarty/Documents/Codex/2026-07-28/hatch-pet-users-arghya-chakrabarty-codex/work/snowy-pet/frames/review/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16275,
+          "bbox": [
+            29,
+            5,
+            162,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 169
+        }
+      ]
+    }
+  ]
+}
